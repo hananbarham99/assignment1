@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:background="@drawable/th"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="Movies Data Store"
+        android:textSize="25dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:background="#B37D8F"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search about your favourite Movie"
+        android:layout_marginTop="18dp"
+       android:textSize="15dp"
+        android:layout_gravity="center_horizontal"
+        tools:layout_editor_absoluteX="153dp"
+        tools:layout_editor_absoluteY="473dp" />
+
+    <Spinner
+        android:layout_marginTop="8dp"
+        android:id="@+id/spinner"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="1dp"
+        android:layout_gravity="left"
+        tools:layout_editor_absoluteY="222dp" />
+
+    <EditText
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="search about "
+        android:id="@+id/search"></EditText>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginTop="8dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="345dp"
+        android:onClick="onClickSearch"/>
+    //<Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginTop="8dp"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="345dp"
+        android:onClick="onClickSearch2"/>
+
+    <EditText
+        android:layout_marginTop="18dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="the result will appear here"
+        android:id="@+id/result"
+        android:textColor="#6C082A"></EditText>
+
+
+</LinearLayout>
